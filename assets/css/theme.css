@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@1,800&display=swap');
+
+
+header{
+  position: fixed;
+  z-index: 1900;
+  right: 0;
+  left: 0
+}
+
+.theme-logo-container{
+    display:flex;
+    background: #c41641;
+}
+
+.theme-logo{
+  display: block;
+  margin: 0 auto;
+}
+
+.theme-logo::before{
+  content: "CR";
+  font-family: 'Sarabun', sans-serif;
+  font-weight: bolder;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+
+.theme-logo::after{
+  content: "NEWS";
+  font-family: 'Sarabun', sans-serif;
+  font-weight: bolder;
+  font-size: 80px;
+  color: #d3d3d3;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+
+
+
+.theme-menu{
+  border-bottom: 1px solid #c41641;
+  flex-direction: row-reverse
+  ;
+}
+
+
+.theme-sections{
+  padding: 230px 6px;
+  margin-bottom:0px;
+  padding-bottom: 100px;
+}
+
+
+.theme-categories{
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+.theme-footer{
+  position: relative;
+  background: white;
+  border-top: 1px solid #c41641;
+  width: 100%;
+  padding: 20px;
+  bottom: 0;
+}
+
+
+.theme-footer span{
+  color: #c41641;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+.theme-active{
+  text-decoration: underline;
+}
+
+.theme-card-body{
+  padding: 0!important;
+  display: flex;
+  align-items: center;
+}
+
+h1.theme-tittle-category{
+
+}
+
+
+.theme-createdAt{
+  color: #39c;
+}
+
+.theme-btn-date{
+  margin-left: 10px;
+}
+
+
+.theme-no-show-news{
+  display: none;
+}
+
+.theme-show-news{
+  display: block;
+}
+
+
+.theme-category-News{
+  max-width: 200px;
+  margin-left: -25px;
+  padding: 5px;
+  text-align: center;
+}
+
+
+
+#theme-home{
+  position: fixed;
+  overflow-x: scroll;
+  background: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1200;
+}
+
+.theme-container-home{
+}
+.theme-container-home{
+  width: 900px;
+  height: 300px;
+  margin: 300px auto;
+}
+.theme-container-home img{
+  margin: 0px auto;
+  width: 500px;
+  height: 500px;
+}
+
+.theme-sales{
+  margin: 5px;
+}
+
+.theme-NACIONALES{color: white;background: #39C;}
+.theme-SUCESOS{color: white;background: #cfcd59;}
+.theme-DEPORTES{color: white;background: #787878;}
+.theme-ESPECTACULOS{color: white;background: black;}

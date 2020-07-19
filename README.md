@@ -1,1 +1,2 @@
-# crnews
+# CrNews
+Tarea de Programacion 3

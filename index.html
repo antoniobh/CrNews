@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CR NEWS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+
+    <!-- Carga de los Elementos de JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!--
+    *
+    *
+    *            Carga del JS del tema
+    *
+    *
+    *
+     -->
+        <script src="./assets/js/theme.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <!-- /**
+     *
+     *   El uso de las etiquetas data-* se aplican con el fin de crear filtros
+     *  de busqueda, tanto para buscar por categorias como para buscar por fecha
+     *
+     */ -->
+
+
+<main class="container-fluid">
+  <header>
+      <!-- creacion del la cabezera de la pagina -->
+      <div class="theme-logo-container">
+          <div class="theme-logo"></div>
+      </div>
+      <!--
+      *
+      *      El menu de Busqueda y filtrado
+      *
+       -->
+
+       <nav class="navbar navbar-expand-sm navbar-light bg-light theme-menu">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavDropdown">
+           <ul class="navbar-nav">
+             <li class="theme-filter nav-item theme-active" data-theme-filter="todo">
+               <a class="nav-link" href="#">Todas las noticias <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="theme-filter nav-item" data-theme-filter="nacionales">
+               <a class="nav-link" href="#">Nacionales <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="theme-filter nav-item" data-theme-filter="sucesos">
+               <a class="nav-link" href="#">Sucesos</a>
+             </li>
+             <li class="theme-filter nav-item" data-theme-filter="deportes">
+               <a class="nav-link" href="#">Deportes</a>
+             </li>
+             <li class="theme-filter nav-item" data-theme-filter="espectaculos">
+               <a class="nav-link" href="#">Espectaculos</a>
+             </li>
+             <li class="nav-item">
+               <div class="form-inline">
+                 <input type="date" id="theme-input-filter-date" class="form-control">
+                 <button type="button" id="theme-filter-date" class="btn form-control theme-btn-date"> Buscar</button>
+                 <button type="button" id="theme-destroy-filter-date" class="btn form-control theme-btn-date"> Todas las fechas</button>
+               </div>
+             </li>
+           </ul>
+         </div>
+       </nav>
+
+  </header>
+
+
+      <!-- /**
+       *
+       *    Contenedor de las categorias del periodico
+       *
+       */ -->
+
+  <div class="theme-sections container-fluid">
+      <!-- Creacion de un contenido en columna -->
+      <div class="col">
+        <!-- Se ingresa todo el contenido en un sola fila -->
+
+        <div class="theme-home col" id="theme-home">
+            <div class="theme-container-home row col-md-12">
+                <h1>Somos mas que noticias, somos el corazón del pueblo!!!</h1>
+                <img src="./assets/images/home.jpg" class="news img-fluid" alt="">
+            </div>
+        </div>
+
+
+        <div class="row">
+          <!-- se calcula a modelo de 9 la seccion de noticias -->
+        <div class="col-lg-9">
+
+          <!-- /**
+           *
+           *    Seccion de Nacionales
+           *
+           */ -->
+              <section class="theme-categories" id="nacionales" data-theme-type="nacionales">
+              <!--
+              /*
+              *  Creo el contenedor de tarjetas de noticias de la categoria
+              */
+             -->
+                 <div class="theme-nacionales-1"></div>
+                 <div class="theme-nacionales-2"></div>
+                 <div class="theme-nacionales-3"></div>
+                 <div class="theme-nacionales-4"></div>
+                 <div class="theme-nacionales-5"></div>
+                 <div class="theme-nacionales-6"></div>
+              </section>
+      <!-- /**
+            *
+            *    Seccion de Sucesos
+            *
+            */ -->
+              <section class="theme-categories" id="sucesos" data-theme-type="sucesos">
+                <!--
+                /*
+                *  Creo el contenedor de tarjetas de noticias de la categoria
+                */
+               -->
+                   <div class="theme-sucesos-1"></div>
+                   <div class="theme-sucesos-2"></div>
+                   <div class="theme-sucesos-3"></div>
+                   <div class="theme-sucesos-4"></div>
+                   <div class="theme-sucesos-5"></div>
+                   <div class="theme-sucesos-6"></div>
+              </section>
+      <!-- /**
+           *
+           *    Seccion de deportes
+           *
+           */ -->
+               <section class="theme-categories" id="deportes" data-theme-type="deportes">
+               <!--
+               /*
+               *  Creo el contenedor de tarjetas de noticias de la categoria
+               */
+              -->
+                  <div class="theme-deportes-1"></div>
+                  <div class="theme-deportes-2"></div>
+                  <div class="theme-deportes-3"></div>
+                  <div class="theme-deportes-4"></div>
+                  <div class="theme-deportes-5"></div>
+                  <div class="theme-deportes-6"></div>
+               </section>
+
+      <!-- /**
+           *
+           *    Seccion de espectaculos
+           *
+           */ -->
+               <section class="theme-categories" id="espectaculos" data-theme-type="espectaculos">
+               <!--
+               /*
+               *  Creo el contenedor de tarjetas de noticias de la categoria
+               */
+              -->
+                  <div class="theme-espectaculos-1"></div>
+                  <div class="theme-espectaculos-2"></div>
+                  <div class="theme-espectaculos-3"></div>
+                  <div class="theme-espectaculos-4"></div>
+                  <div class="theme-espectaculos-5"></div>
+                  <div class="theme-espectaculos-6"></div>
+               </section>
+        </div>
+          <!-- se calcula a modelo de 3 la seccion de avisos para completar el modelo de 12 del Grid system -->
+        <div class="col-lg-3">
+          <!-- /**
+               *
+               *    Seccion de avisos
+               *
+               */ -->
+               <aside class="theme-categories" id="avisos">
+                 <h1>Avisos</h1>
+                   <h2 style="color: red">Ventas</h2>
+                 <div class="row">
+
+                   <div class="card theme-sales" style="width: 18rem;">
+                     <img class="card-img-top" src="./assets/images/sales/1.jpg" alt="Card image cap">
+                     <div class="card-body">
+                       <h5 class="card-title">Casa en venta</h5>
+                       <p class="card-text">Vendemos hermosa casa, ubicada en san isidro de Heredia, contiguo a la iglesia, excelente estado.</p>
+                     </div>
+                   </div>
+
+                   <div class="card theme-sales" style="width: 18rem;">
+                     <img class="card-img-top" src="./assets/images/sales/2.jpg" alt="Card image cap">
+                     <div class="card-body">
+                       <h5 class="card-title">Laptops</h5>
+                       <p class="card-text">Nesecita Laptops?, compre la suya con nosotros, tenemos los mejores precios, que se ajustan a su bolsillo.</p>
+                     </div>
+                   </div>
+
+                   <div class="card theme-sales" style="width: 18rem;">
+                     <img class="card-img-top" src="./assets/images/sales/3.jpg" alt="Card image cap">
+                     <div class="card-body">
+                       <h5 class="card-title">Cambio de monitor</h5>
+                       <p class="card-text">Aproveche la promocion de nuestra tienda, por esta semana estaremos dando promociones de liquidacion.</p>
+                     </div>
+                   </div>
+
+                   <div class="card theme-sales" style="width: 18rem;">
+                     <img class="card-img-top" src="./assets/images/sales/4.jpg" alt="Card image cap">
+                     <div class="card-body">
+                       <h5 class="card-title">Comida express</h5>
+                       <p class="card-text">No salga de casa, nosotros le llevamos el sabor de nuestra cocina hasta la puerta de su casa en 15 minutos.</p>
+                     </div>
+                   </div>
+
+                   <div class="card theme-sales" style="width: 18rem;">
+                     <img class="card-img-top" src="./assets/images/sales/5.jpg" alt="Card image cap">
+                     <div class="card-body">
+                       <h5 class="card-title">Venta de ropa en liquidacion</h5>
+                       <p class="card-text">Somos un grupo de venta de ropa americana, estamos ubicados en Heredia, visitenos y Aproveche nuestros precios.</p>
+                     </div>
+                   </div>
+
+                   <div class="card theme-sales" style="width: 18rem;">
+                     <img class="card-img-top" src="./assets/images/sales/6.jpg" alt="Card image cap">
+                     <div class="card-body">
+                       <h5 class="card-title">Casas para mascotas</h5>
+                       <p class="card-text">Porque su mascota merece lo mejor, llevese una casa para que su mascota viva en su propio espacio, un hogar dentro del hogar.</p>
+                     </div>
+                   </div>
+
+                 </div>
+               </aside>
+        </div>
+        </div>
+      </div>
+
+
+
+  </div>
+
+
+  <!-- Pie de pagina -->
+
+    <footer class="theme-footer">
+        <span>CR News, el periodico que va al avance de la noticia.</span>
+    </footer>
+
+
+</main>
+  </body>
+  <script src="./assets/js/assigner-news.js" charset="utf-8"></script>
+</html>
